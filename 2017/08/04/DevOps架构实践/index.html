@@ -6,20 +6,20 @@
   <meta name="keywords" content="">
   <meta name="description" content="DevOps架构实践 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="问题之前使用hexo+GitHub Pages搭建个人博客，同时使用了在腾讯云买了域名，使用了域名解析，将GitHub Pages的访问地址解析到了自己买的域名，在GitHub仓库里面使用了CNAME文件指定域名，如我的lingyejun.com。因此如果需要停止域名解析就需要现在阿里云域名解析那里暂停解析该网址（或者删除，严格来说这一步在这个问题里面其实可以没有，关键是后面的）；然后将Git">
+<meta name="description" content="背景今天下午出现告警提示线上环境机器的CPU突增到100%，持续约两分钟又回落到正常水平。 结论文件导出时由于逻辑漏洞导致部分场景，填充excel时出现死循环，当数据填充到一定量时，就会抛异常而后捕捉到，跳出循环。 一般场景分析一般来说，CPU高有以下几种常见原因： 业务请求和处理的并发量大，并且业务中包含较大的运算量；业务代码存在Bug，出现了过多的冗余计算或者死循环；由于可用内存空间不足（">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub Pages使用过域名解析，停止后还能跳转到原有地址的原因">
-<meta property="og:url" content="http://example.com/2024/03/04/GitHub%20Pages%E4%BD%BF%E7%94%A8%E8%BF%87%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%EF%BC%8C%E5%81%9C%E6%AD%A2%E5%90%8E%E8%BF%98%E8%83%BD%E8%B7%B3%E8%BD%AC%E5%88%B0%E5%8E%9F%E6%9C%89%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8E%9F%E5%9B%A0/index.html">
+<meta property="og:title" content="代码逻辑死循环导致线上CPU飙升问题排查">
+<meta property="og:url" content="http://example.com/2024/03/04/%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91%E6%AD%BB%E5%BE%AA%E7%8E%AF%E5%AF%BC%E8%87%B4%E7%BA%BF%E4%B8%8ACPU%E9%A3%99%E5%8D%87%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="问题之前使用hexo+GitHub Pages搭建个人博客，同时使用了在腾讯云买了域名，使用了域名解析，将GitHub Pages的访问地址解析到了自己买的域名，在GitHub仓库里面使用了CNAME文件指定域名，如我的lingyejun.com。因此如果需要停止域名解析就需要现在阿里云域名解析那里暂停解析该网址（或者删除，严格来说这一步在这个问题里面其实可以没有，关键是后面的）；然后将Git">
+<meta property="og:description" content="背景今天下午出现告警提示线上环境机器的CPU突增到100%，持续约两分钟又回落到正常水平。 结论文件导出时由于逻辑漏洞导致部分场景，填充excel时出现死循环，当数据填充到一定量时，就会抛异常而后捕捉到，跳出循环。 一般场景分析一般来说，CPU高有以下几种常见原因： 业务请求和处理的并发量大，并且业务中包含较大的运算量；业务代码存在Bug，出现了过多的冗余计算或者死循环；由于可用内存空间不足（">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-04T14:24:00.000Z">
-<meta property="article:modified_time" content="2024-03-20T15:49:18.760Z">
-<meta property="article:author" content="翎野先生">
+<meta property="article:published_time" content="2024-03-04T15:01:00.000Z">
+<meta property="article:modified_time" content="2024-03-20T15:49:18.759Z">
+<meta property="article:author" content="翎野君">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="icon" href="/img/avatar.jpg">
+<link rel="icon" href="/img/lingyejun.jpeg">
 
 <link href="/css/style.css?v=1.1.0" rel="stylesheet">
 
@@ -61,10 +61,10 @@
         <a href="/"
    class="avatar_target">
     <img class="avatar"
-         src="/img/avatar.jpg"/>
+         src="/img/lingyejun.jpeg"/>
 </a>
 <div class="author">
-    <span>翎野先生</span>
+    <span>翎野君</span>
 </div>
 
 <div class="icon">
