@@ -83,7 +83,7 @@
     
         
             <a title="github"
-               href="https://github.com/yelog"
+               href="https://github.com/lingyejun"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -94,60 +94,8 @@
         
     
         
-            <a title="facebook"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
-        
-    
-        
-            <a title="instagram"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-instagram"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="reddit"
-               href="https://www.reddit.com/user/yelog/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-reddit"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="weibo"
-               href="http://weibo.com/u/2307534817"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
             <a title="jianshu"
-               href="https://www.jianshu.com/u/ff56736de7cf"
+               href="http://www.lingyejun.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -158,36 +106,32 @@
         
     
         
-            <a title="zhihu"
-               href="https://www.zhihu.com/people/jaytp/activities"
+            <a title="cnblog"
+               href="https://www.cnblogs.com/lingyejun"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu"></use>
+                        <use xlink:href="#icon-cnblog"></use>
                     </svg>
                 
             </a>
         
     
         
-    
-        
-            <a title="oschina"
-               href="https://my.oschina.net/yelog"
+            <a title="csdn"
+               href="https://blog.csdn.net/lingyejun"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-oschina"></use>
+                        <use xlink:href="#icon-csdn"></use>
                     </svg>
                 
             </a>
-        
-    
         
     
         
             <a title="email"
-               href="mailto:jaytp@qq.com"
+               href="mailto:746193228@qq.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -199,35 +143,11 @@
     
         
             <a title="qq"
-               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               href="http://wpa.qq.com/msgrd?v=3&uin=746193228&site=qq&menu=yes"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
                         <use xlink:href="#icon-qq"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="kugou"
-               href="https://www.kugou.com/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-kugou"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="neteasemusic"
-               href="https://music.163.com/#/user/home?id=88151013"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-neteasemusic"></use>
                     </svg>
                 
             </a>
@@ -3502,7 +3422,7 @@
 <p> 1 &#x2F;&#x2F; 被final修饰的class是最终类，不能被继承<br> 2 public final class FinalClass { 3     &#x2F;&#x2F; 被final修饰的常量可以在声明时赋值<br> 4     private final String str; 5<br> 6     public FinalClass() { 7         str &#x3D; “1.被final修饰的变量必须初始化，1.声明时赋值2.构造方法中赋值”; 8 } 9<br>10     public void testOut() { 11         System.out.println(“3.被final修饰的方法不能被子类重写”); 12 } 13<br>14     public static void main(String[] args) { 15         &#x2F;&#x2F; 1.final变量即最终变量不能被修改<br>16         FinalClass finalClass &#x3D; new FinalClass(); 17 System.out.println(finalClass.str); 18         &#x2F;&#x2F; 被final修饰的引用类型变量，初始化后不能指向另一个对象，否则编译不通过<br>19         final Object finalObject &#x3D; new Object(); 20         &#x2F;&#x2F; 试图修改后编译不通过<br>21         finalObject &#x3D; new Object(); 22         &#x2F;&#x2F; 2.在变量创建的时候赋值<br>23         final String finalStr &#x3D; “2.被final修饰的变量，再赋值后就是最终变量即常量，不能被修改”; 24 System.out.println(finalStr); 25         &#x2F;&#x2F; 3.final修饰的方法是最终方法不能被子类重写修改其意味<br>26 finalClass.testOut(); 27 } 28 } 29 &#x2F;&#x2F; 5.不能继承被final修饰的最终类,否则会编译不通过<br>30 class CantExtend extends FinalClass { 31     public String name; 32     &#x2F;&#x2F; 4.试图重写父类中被final修饰的方法时会导致编译不通过<br>33     public void testOut() { 34         System.out.println(“不能重写父类中final方法”); 35 } 36 }</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君如果您喜欢或希望看到更多我的文章，可关注我的微信公众号《翎野君》。 </span>
     </div>
 </article>
 
@@ -3524,7 +3444,7 @@
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Yelog
+    ©2016-2024 lingyejun
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
