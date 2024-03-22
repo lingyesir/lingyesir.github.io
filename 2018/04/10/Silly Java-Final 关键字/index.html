@@ -423,19 +423,19 @@
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
@@ -3422,7 +3422,7 @@
 <p> 1 &#x2F;&#x2F; 被final修饰的class是最终类，不能被继承<br> 2 public final class FinalClass { 3     &#x2F;&#x2F; 被final修饰的常量可以在声明时赋值<br> 4     private final String str; 5<br> 6     public FinalClass() { 7         str &#x3D; “1.被final修饰的变量必须初始化，1.声明时赋值2.构造方法中赋值”; 8 } 9<br>10     public void testOut() { 11         System.out.println(“3.被final修饰的方法不能被子类重写”); 12 } 13<br>14     public static void main(String[] args) { 15         &#x2F;&#x2F; 1.final变量即最终变量不能被修改<br>16         FinalClass finalClass &#x3D; new FinalClass(); 17 System.out.println(finalClass.str); 18         &#x2F;&#x2F; 被final修饰的引用类型变量，初始化后不能指向另一个对象，否则编译不通过<br>19         final Object finalObject &#x3D; new Object(); 20         &#x2F;&#x2F; 试图修改后编译不通过<br>21         finalObject &#x3D; new Object(); 22         &#x2F;&#x2F; 2.在变量创建的时候赋值<br>23         final String finalStr &#x3D; “2.被final修饰的变量，再赋值后就是最终变量即常量，不能被修改”; 24 System.out.println(finalStr); 25         &#x2F;&#x2F; 3.final修饰的方法是最终方法不能被子类重写修改其意味<br>26 finalClass.testOut(); 27 } 28 } 29 &#x2F;&#x2F; 5.不能继承被final修饰的最终类,否则会编译不通过<br>30 class CantExtend extends FinalClass { 31     public String name; 32     &#x2F;&#x2F; 4.试图重写父类中被final修饰的方法时会导致编译不通过<br>33     public void testOut() { 34         System.out.println(“不能重写父类中final方法”); 35 } 36 }</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君如果您喜欢或希望看到更多我的文章，可关注我的微信公众号《翎野君》。 </span>
+       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君,如果您喜欢我的文章可以点击下方赞助支持一杯咖啡。更多我的文章，可关注我的微信公众号《翎野君》。 </span>
     </div>
 </article>
 

@@ -423,19 +423,19 @@
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
@@ -3430,7 +3430,7 @@
 <p>public class PolyTest {<br>    public void polyUse(DBConn dbtype){<br>        dbtype.conn();<br>        &#x2F;**<br>         * 向上类型转换后父类引用就不能使用子类特有的功能<br>         * 通过向下类型转换（强制类型转换）可以解决这个问题<br>         *&#x2F; OracleConn oracle &#x3D;(OracleConn)dbtype;<br>        oracle.oraclePrint();<br>    }<br>    public static void main(String[] args) {<br>        DBConn dbtype &#x3D; null;<br>        PolyTest pt&#x3D;new PolyTest();<br>        &#x2F;&#x2F;在用户输入之前你并不知道要调用哪一个数据库连接<br>        &#x2F;&#x2F;在程序执行之后用户输入完毕之后才能确认<br>        Scanner sc &#x3D;new Scanner(System.in);<br>        String dbName&#x3D;sc.nextLine();<br>        switch (dbName)<br>        {<br>        case “Oracle”:<br>            dbtype&#x3D;new OracleConn();<br>            break;<br>        case “DB2”:<br>            dbtype&#x3D;new DB2Conn();<br>            break;<br>        case “Mysql”:<br>            dbtype&#x3D;new MysqlConn();<br>            break;<br>        default:<br>            System.out.println(“end”);<br>            break;<br>        }<br>        &#x2F;&#x2F;多态的使用可以减少代码的编写，直接下面一句话就可以了<br>        &#x2F;&#x2F;提高代码的扩展性，要加其他类型的数据库的话直接在下面加就可以了上面的并不需要改<br> pt.polyUse(dbtype);<br>    }<br>}<br>class DBConn{<br>    public void conn(){<br>        System.out.println(“连接数据库”);<br>    }<br>}<br>class OracleConn extends DBConn{<br>    public void conn(){<br>        System.out.println(“连接Oracle数据库”);<br>    }<br>    public void oraclePrint(){<br>        System.out.println(“%like%“);<br>    }<br>}<br>class DB2Conn extends DBConn{<br>    public void conn(){<br>        System.out.println(“连接DB2数据库”);<br>    }<br>}<br>class MysqlConn extends DBConn{<br>    public void conn(){<br>        System.out.println(“连接Mysql数据库”);<br>    }<br>}</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君如果您喜欢或希望看到更多我的文章，可关注我的微信公众号《翎野君》。 </span>
+       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君,如果您喜欢我的文章可以点击下方赞助支持一杯咖啡。更多我的文章，可关注我的微信公众号《翎野君》。 </span>
     </div>
 </article>
 

@@ -423,19 +423,19 @@
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
         
         <a  class="All "
-           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8A%EF%BC%89/"
+           href="/2024/01/04/Dating%20Java8%E7%B3%BB%E5%88%97%E4%B9%8BLambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8B%EF%BC%89/"
            data-tag=""
            data-author="" >
-            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（上）">Dating Java8系列之Lambda表达式和函数式接口（上）</span>
+            <span class="post-title" title="Dating Java8系列之Lambda表达式和函数式接口（下）">Dating Java8系列之Lambda表达式和函数式接口（下）</span>
             <span class="post-date" title="2024-01-04 23:55:00">2024/01/04</span>
         </a>
         
@@ -3646,7 +3646,7 @@ public static void main\(String... args\) \&#123;
 <h1 id="序列化问题-Serialization"><a href="#序列化问题-Serialization" class="headerlink" title="序列化问题-Serialization"></a>序列化问题-Serialization</h1><p>我们强烈<strong>不建议</strong>对内部类、局部类及匿名类，实现序列化。<br>当Java编译器编译内部类的构造方法时，会生成synthetic constructs。即一些在源码中未曾出现过的类、方法、字段和其他的构造方法也会被编译出来。<br>synthetic constructs方式，可以在不改变JVM的前提下，只通过java编译器就可以实现java的新特性。然而，不同的编译器实现synthetic constructs的方式有所不同，这也就意味着，<strong>对于同样的.java源码，不同的编译器会编译出来不同的.class文件。</strong><br>因此，对于一个内部类序列化后，使用不同的JRE进行反序列化的话，可能会存在<strong>兼容性</strong>的问题。</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君如果您喜欢或希望看到更多我的文章，可关注我的微信公众号《翎野君》。 </span>
+       <hr><span style="font-style: italic;color: gray;"> 作者：翎野君,如果您喜欢我的文章可以点击下方赞助支持一杯咖啡。更多我的文章，可关注我的微信公众号《翎野君》。 </span>
     </div>
 </article>
 
